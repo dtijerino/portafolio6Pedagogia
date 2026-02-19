@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TERMINAL PEDAGÓGICA v6.0 - DANIEL TIJERINO</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;500&family=Inter:wght@400;700&display=swap');
+
+        :root {
+            --neon-cyan: #00f2ff;
+            --neon-purple: #bc13fe;
+            --bg-black: #0a0a0c;
+            --card-glass: rgba(255, 255, 255, 0.03);
+            --border-glass: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background: radial-gradient(circle at top right, #1a1a2e, var(--bg-black));
+            color: #d1d1d1;
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .terminal-container {
+            width: 100%;
+            max-width: 1200px;
+            border: 1px solid var(--border-glass);
+            background: var(--card-glass);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        /* Top Bar Estilo Mac/Linux */
+        .top-bar {
+            background: rgba(255,255,255,0.05);
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            border-bottom: 1px solid var(--border-glass);
+        }
+        .dot { width: 12px; height: 12px; border-radius: 50%; }
+        .red { background: #ff5f56; } .yellow { background: #ffbd2e; } .green { background: #27c93f; }
+
+        .content { padding: 40px; }
+
+        header { text-align: left; margin-bottom: 60px; border-left: 4px solid var(--neon-cyan); padding-left: 20px; }
+        header h1 { font-family: 'Fira Code', monospace; color: var(--neon-cyan); font-size: 2.5em; margin: 0; }
+        .metadata { font-size: 0.9em; color: #888; margin-top: 10px; font-family: 'Fira Code', monospace; }
+
+        h2 { color: var(--neon-purple); text-transform: uppercase; font-size: 1.2em; letter-spacing: 2px; margin-top: 40px; }
+        
+        .grid-system { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+
+        .module {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid var(--border-glass);
+            padding: 25px;
+            border-radius: 8px;
+            position: relative;
+        }
+        .module::before {
+            content: "DATA_NODE";
+            position: absolute;
+            top: -10px;
+            right: 15px;
+            background: var(--bg-black);
+            padding: 0 10px;
+            font-size: 0.7em;
+            color: var(--neon-cyan);
+            font-family: 'Fira Code', monospace;
+        }
+
+        .highlight-text { color: #fff; font-weight: 600; border-bottom: 1px solid var(--neon-cyan); }
+
+        .case-study {
+            border-left: 2px solid var(--neon-purple);
+            padding-left: 20px;
+            margin: 20px 0;
+            background: rgba(188, 19, 254, 0.05);
+            padding: 15px;
+        }
+
+        blockquote {
+            font-family: 'Fira Code', monospace;
+            color: #aaa;
+            border: none;
+            font-size: 0.95em;
+        }
+
+        .btn-infografia {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            border: 1px solid var(--neon-cyan);
+            color: var(--neon-cyan);
+            text-decoration: none;
+            font-family: 'Fira Code', monospace;
+            transition: 0.3s;
+            text-transform: uppercase;
+            font-size: 0.8em;
+        }
+        .btn-infografia:hover { background: var(--neon-cyan); color: #000; box-shadow: 0 0 20px var(--neon-cyan); }
+
+        footer { text-align: center; margin-top: 60px; padding: 20px; font-size: 0.8em; opacity: 0.5; }
+    </style>
+</head>
+<body>
+
+<div class="terminal-container">
+    <div class="top-bar">
+        <div class="dot red"></div><div class="dot yellow"></div><div class="dot green"></div>
+        <span style="margin-left: 20px; font-family: 'Fira Code', monospace; font-size: 0.8em; opacity: 0.5;">SSH: user@una-castro-carazo ~ portafolio_06_pedagogia.sys</span>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1>PORTAFOLIO SEMANA #6</h1>
+            <div class="metadata">
+                [ESTUDIANTE] : Daniel Tijerino Cerón<br>
+                [DOCENTE]    : Carmen Amelia Ulate Quesada<br>
+                [Curso]  : INTRODUCCIÓN A LA PEDAGOGÍA<br>
+                [FECHA]      : 20 Febrero 2026<br>
+				I Cuatrimestre
+            </div>
+        </header>
+
+        <section>
+            <h2>01. Análisis de Entrada: El Núcleo del Docente</h2>
+            <div class="module">
+                <p>La imagen compartida en el chat de teams representa el <span class="highlight-text">Kernel de la Pedagogía</span>: Pasión, Innovación y Compromiso. Mi reflexión rompe el romanticismo vacío para entrar en la ética técnica: <em>enseñar bajo el estándar que exijo para mis propios hijos</em>. Como docente de sistemas, entiendo que la innovación no es opcional; es la actualización constante del sistema operativo mental del estudiante para que no quede obsoleto ante la realidad laboral.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>02. Procesamiento de Evidencias: Pensamiento Sistémico</h2>
+            <div class="grid-system">
+                <div class="module">
+                    <h3>Pensamiento Complejo (Morin)</h3>
+                    <p>Aplicación del <span class="highlight-text">Bucle Recursivo</span>. En clase, Valentina Fernández expuso un caso crítico: un alumno en estado de "vulnerabilidad emocional". Su análisis demostró que el síntoma (tristeza/bloqueo) no se resuelve en el código superficial, sino analizando las <strong>variables de entorno</strong> (hogar, madre, niñera). Esto es pedagogía de alta complejidad: el todo afecta a la parte.</p>
+                </div>
+                <div class="module">
+                    <h3>Pensamiento Crítico (Facione)</h3>
+                    <p>La <span class="highlight-text">Metacognición</span> como herramienta de depuración. Tal como mencionó la Profe Carmen con los problemas de física, el pensamiento crítico permite al alumno evaluar su propia ruta de resolución. No buscamos una única salida, sino la comprensión del proceso lógico que lleva al resultado. Es el fin de la inteligencia ciega.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>03. Síntesis Colectiva: Interoperabilidad</h2>
+            <div class="module">
+                <div class="case-study">
+                    <strong>CASO VALENTINA:</strong> "Primero analizar qué está pasando... suceso tras suceso". Esta es la definición de un analista de sistemas aplicado a lo humano. La educación es un sistema de sistemas.
+                </div>
+                <div class="case-study">
+                    <strong>CASO JOSELINE:</strong> El "Árbol del Aprendizaje" nos recuerda que la formación integral es la infraestructura que sostiene las ramas técnicas. Sin raíces artísticas y humanas, la tecnología es estéril.
+                </div>
+                <p>Mi integración como <span class="highlight-text">Docente 5.0</span> propone que la pedagogía debe ser un sistema robusto, capaz de procesar tanto la lógica binaria del código como la incertidumbre de la psique humana.</p>
+                <center>
+                    <a href="https://dtijerino.github.io/infografia/" target="_blank" class="btn-infografia">Acceder a Repositorio de Infografía (GitHub)</a>
+                </center>
+            </div>
+        </section>
+
+        <section>
+            <h2>04. Conclusiones Propias (Log: /var/log/conclusions)</h2>
+            <div class="module">
+                <ul>
+                    <li>La <strong>Noología</strong> de Morin es nuestra defensa contra el dogmatismo pedagógico; debemos civilizar nuestras teorías para no ser esclavos de métodos arcaicos.</li>
+                    <li>El pensamiento crítico es el firewall contra la desinformación y el bloqueo cognitivo en áreas STEM.</li>
+                    <li>Un docente que no aplica la escucha activa ante el contexto (como Valentina) es un docente con el sistema colapsado.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            
+            <br>Daniel Tijerino Cerón | Sistemas & Pedagogía | 2026
+        </footer>
+    </div>
+</div>
+
+</body>
+</html>
